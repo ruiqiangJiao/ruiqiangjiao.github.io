@@ -1,0 +1,787 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.5.1"/>
+
+
+    <meta name="description" content="宁缺毋滥" />
+
+
+
+  <meta name="keywords" content="review," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="增广遗贤" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.1" />
+
+
+<meta name="description" content="写在最前时间都去哪了?仿佛是年初,这么近,可又那么远.
+2015,你在哪里?2015学年已经结束,回味一番,上半学年已处于了失忆的状态,也许从六月份才伊记事,至此之后,趁那些记忆还未褪色,先将其备个案。
+小论文7-9月成就了一个新坑&amp;lt;&amp;lt;基于贝叶斯学习的惩罚因子的选择&amp;gt;&amp;gt;,在拖延症和强迫症的主观和客观作用下,产出寥寥无几,勤勤恳恳(折腾不休)钻研,断断续续,直到阳历年底将其抛">
+<meta property="og:type" content="article">
+<meta property="og:title" content="这么近,那么远">
+<meta property="og:url" content="http://ruiqiangjiao.github.io/2016/01/26/这么近-那么远/index.html">
+<meta property="og:site_name" content="增广遗贤">
+<meta property="og:description" content="写在最前时间都去哪了?仿佛是年初,这么近,可又那么远.
+2015,你在哪里?2015学年已经结束,回味一番,上半学年已处于了失忆的状态,也许从六月份才伊记事,至此之后,趁那些记忆还未褪色,先将其备个案。
+小论文7-9月成就了一个新坑&amp;lt;&amp;lt;基于贝叶斯学习的惩罚因子的选择&amp;gt;&amp;gt;,在拖延症和强迫症的主观和客观作用下,产出寥寥无几,勤勤恳恳(折腾不休)钻研,断断续续,直到阳历年底将其抛">
+<meta property="og:updated_time" content="2016-02-23T15:41:50.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="这么近,那么远">
+<meta name="twitter:description" content="写在最前时间都去哪了?仿佛是年初,这么近,可又那么远.
+2015,你在哪里?2015学年已经结束,回味一番,上半学年已处于了失忆的状态,也许从六月份才伊记事,至此之后,趁那些记忆还未褪色,先将其备个案。
+小论文7-9月成就了一个新坑&amp;lt;&amp;lt;基于贝叶斯学习的惩罚因子的选择&amp;gt;&amp;gt;,在拖延症和强迫症的主观和客观作用下,产出寥寥无几,勤勤恳恳(折腾不休)钻研,断断续续,直到阳历年底将其抛">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post'
+  };
+</script>
+
+  <title> 这么近,那么远 | 增广遗贤 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?d5f27801953ba5c3e9dc5aad3e0fa50e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-next-logo"></i>
+      </span>
+      <span class="site-title">增广遗贤</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-next-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            <i class="menu-item-icon icon-next-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-next-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-next-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-next-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'WtkpjQcMKmw5LmSEnz21','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content"> 
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              这么近,那么远
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2016-01-26T20:28:41+08:00" content="2016-01-26">
+            2016-01-26
+          </time>
+        </span>
+
+        
+          <span class="post-category" >
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/随笔/" itemprop="url" rel="index">
+                  <span itemprop="name">随笔</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2016/01/26/这么近-那么远/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/26/这么近-那么远/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h2 id="u5199_u5728_u6700_u524D"><a href="#u5199_u5728_u6700_u524D" class="headerlink" title="写在最前"></a>写在最前</h2><p>时间都去哪了?仿佛是年初,这么近,可又那么远.</p>
+<h2 id="2015_2C_u4F60_u5728_u54EA_u91CC_3F"><a href="#2015_2C_u4F60_u5728_u54EA_u91CC_3F" class="headerlink" title="2015,你在哪里?"></a>2015,你在哪里?</h2><p>2015学年已经结束,回味一番,上半学年已处于了失忆的状态,也许从六月份才伊记事,至此之后,趁那些记忆还未褪色,先将其备个案。</p>
+<h3 id="u5C0F_u8BBA_u6587"><a href="#u5C0F_u8BBA_u6587" class="headerlink" title="小论文"></a>小论文</h3><p>7-9月成就了一个新坑&lt;&lt;基于贝叶斯学习的惩罚因子的选择&gt;&gt;,在拖延症和强迫症的主观和客观作用下,产出寥寥无几,勤勤恳恳(折腾不休)钻研,断断续续,直到阳历年底将其抛出,将此坑抚平.值此之际,在<a href="http://ghk.gitcafe.io/" target="_blank" rel="external">郭老弟</a>的引荐及帮助之下,认识了排版界大神<a href="http://www.latex-project.org/" target="_blank" rel="external">LaTeX</a>君并习得大神技能的一二.小白初涉论(paper)坛,就像一团烂泥,在诸位(赵老师,刘老师,蔡师兄,毛学长)的帮助下,才上了墙。</p>
+<p>五音不全的偶还是要向走在道上的同仁哼唱一下一路走过的插曲:</p>
+<ul>
+<li><p><a href="http://www.latex-project.org/" target="_blank" rel="external">TeXLive</a>君有别于<a href="http://www.miktex.org/" target="_blank" rel="external">MiKTeX</a>道友,他为人冷傲,需点他的install-tl-windows.bat批处理方可相见.</p>
+</li>
+<li><p>在论文的投递期间,时时关注对方给予的反馈,及时咨询,小白不懂这其中的潜规则,愣是吃了这厮的暗亏.</p>
+</li>
+</ul>
+<h3 id="u6570_u5B66_u5EFA_u6A21"><a href="#u6570_u5B66_u5EFA_u6A21" class="headerlink" title="数学建模"></a>数学建模</h3><p>9-17~9.21数学建模,连着虐了五天,也发现了自身在学习过程的bug:</p>
+<ul>
+<li><p>在学习R语言的过程中,注重了它的形——那些神马牌R包,忽略了它的神——面向对象编程,这次活动给了我当头一棒;</p>
+</li>
+<li><p>平时学习只注重了理论的知识,当遇到现实中的数据,老虎吃天——无从下手,原来总是活在知识的虚拟世界(高度理论性知识)里,那么地理想。</p>
+</li>
+</ul>
+<h3 id="u56DE_u5BB6_u63A2_u671B"><a href="#u56DE_u5BB6_u63A2_u671B" class="headerlink" title="回家探望"></a>回家探望</h3><p>寒夜飞雪送君别,半载未归念乡切。(9.27-10.9)</p>
+<h3 id="u518D_u8BC6_u591A_u60C5_u73AF-R"><a href="#u518D_u8BC6_u591A_u60C5_u73AF-R" class="headerlink" title="再识多情环-R"></a>再识多情环-R</h3><p>不知何年何月,R俘虏了我的心,曾经让我为之疯,为之狂.</p>
+<p>江湖有两种传言:一是R的综合能力最平均,而环是浑圆的最具有平衡的。因此R成名于数据分析七武器之<a href="http://www.douban.com/note/350484749/" target="_blank" rel="external">多情环</a>;还有一种传言,R移植了部分软件的功能,感觉和谁都存在暧昧关系.关于它的传说已经成为了一种迷.也许是这个原因我当了俘虏的吧!一提到R,有种言尽意未尽的感觉,各位看官见谅!</p>
+<p>假期(10月9号)归来,在<a href="http://brucezhaor.github.io/" target="_blank" rel="external">赵兄弟</a>的帮助下,对R的一个老相好RMarkdown进行了进一步的深化,分别尝试了用<a href="http://rmarkdown.rstudio.com/" target="_blank" rel="external">Rmarkdown</a>写<a href="http://rmarkdown.rstudio.com/pdf_document_format.html" target="_blank" rel="external">pdf文档</a>,制作<a href="http://rmarkdown.rstudio.com/slidy_presentation_format.html" target="_blank" rel="external">幻灯片</a>,当然了依此还制作了一个简易版的简历.</p>
+<p>Rmarkdown中文LaTeX文档的乱码问题一直困扰着我,不知那天晚上手一颤抖,回到rmarkdown的老家,意外地发现了一个神马牌包,号<a href="https://github.com/rstudio/rticles/blob/master/inst/rmarkdown/templates/ctex/skeleton/skeleton.Rmd" target="_blank" rel="external">rticles</a>.</p>
+<h3 id="u521D_u8BC6java"><a href="#u521D_u8BC6java" class="headerlink" title="初识java"></a>初识java</h3><p>经过建模的洗礼,发现了自身的bug,或悲亦或喜,也许喜忧参半吧!11月相对时间较多一点,趁着这段时间调试及修复自身的bug,开启了编程学习之旅.刚开始选择用R编写所需要的算法,可没有计算机语言基础的小白看一个概念找一下谷哥,一下两下找还可以,多次找他,这哥们脾气也不怎么好?为了免得惹人烦,小白从底层做起,作为选择困难户,不知那家的计算机编程好?最后再三思量选择了java。经过一番补救,基本掌握了泛型、类(R中的S3和S4类)等基本概念.</p>
+<h3 id="u9009_u9898"><a href="#u9009_u9898" class="headerlink" title="选题"></a>选题</h3><p>按照这个村办大学的惯例,每个下半学年,在12月20号左右,各年级的研究僧需准备相关的读书活动,重点关照对象是二年级筒靴.不例外地,我也为这次活动准备着节目。</p>
+<h3 id="u642D_u5EFA_u535A_u5BA2"><a href="#u642D_u5EFA_u535A_u5BA2" class="headerlink" title="搭建博客"></a>搭建博客</h3><p>独乐不如众乐,开源式平台的提供无疑是我们发泄的不二选择.好久以前想搭建一个博客,主要源自于以下几个方面:</p>
+<ul>
+<li><p>再强悍的记忆也经不住时间的打磨,在学习的过程中,为了防范捡了芝麻丢了西瓜这种问题,记录无疑是最佳的方式.起初选择的是印象笔记,由于其对数学公式、超链接等的支持度不够友好,随后<a href="http://www.latex-project.org/" target="_blank" rel="external">LaTeX</a>便成了我的主战场.<a href="http://www.latex-project.org/" target="_blank" rel="external">LaTeX</a>编码比较繁琐,对于数据分析的结果复来粘去的,教脾气暴躁的好生厌烦。进而转向于<a href="http://rmarkdown.rstudio.com/" target="_blank" rel="external">Rmarkdown</a>.后来作报告对于部分相对复杂点的数学公式出现乱码情况(也许是技术不到家吧),进而寻求其他的平台,最终就盯上了博客这个高大上的平台.</p>
+</li>
+<li><p>使用博客可以和别人互动,扩展自己的视野。</p>
+</li>
+<li><p>写博客诸多好处,网络上这方面的软文不胜枚举.此处不再赘述。</p>
+</li>
+</ul>
+<p>仰视这么超逼格的东西,直教人心动。搭建属于自己的窝,这么近,又那么远。说多了都是泪。最终还是苦尽甘来。搭建成这般模样,虽然简陋,但五脏俱全.前人栽树,后人乘凉,享受了这么多,多少也尽点心意吧!开始吐辅一下:</p>
+<ul>
+<li>搭建像笔者这样一个简易的博客,网上的教程一抓一大箩筐.可现在的网络技术更新这么快,事物的变化犹如沧海桑田.尤其对于计算机行业,笔者建议跟着官(官方资料)老爷一步一步的走,如果有需要的朋友请移步<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></li>
+</ul>
+<ul>
+<li><p>搭建完成之后,选择自己喜好的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>.笔者当年对<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT</a>因其精于心、简于形的特点而一见钟情。如果她也是你的菜的话,请猛戳<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a>查看它的使用帮助.</p>
+</li>
+<li><p>关于添加阅读量的统计功能选项,笔者用的是依赖于<a href="https://leancloud.cn/" target="_blank" rel="external">LeanCloud</a>这家供应商提供的干货.它的添加配置方式请见<a href="http://notes.xiamo.tk/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">这篇博文</a></p>
+</li>
+</ul>
+<h2 id="u7ED3_u675F_u8BED"><a href="#u7ED3_u675F_u8BED" class="headerlink" title="结束语"></a>结束语</h2><p>2015可以说是一个多产的一年,也是一个难产的一年。下半年忙忙碌碌,家人的谅解、赵老师和刘老师在学术上的指导、蔡师兄和毛学长对论文的反复修改、<a href="http://ghk.gitcafe.io/" target="_blank" rel="external">郭兄弟</a>在<a href="http://www.latex-project.org/" target="_blank" rel="external">LaTeX</a>上的帮助以及<a href="http://brucezhaor.github.io/" target="_blank" rel="external">赵兄弟</a>给予<a href="http://rmarkdown.rstudio.com/" target="_blank" rel="external">Rmarkdown</a>上的引导在此一并表示感谢!</p>
+<p>以后博客中的干货多多,欢迎各位前来RSS我的博客!</p>
+<p>笔耕的生活就此开启,就唠叨于此!漫漫长路,后会有期!</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/review/" rel="tag">#review</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/26/MathJax-With-Hexo/" rel="prev">MathJax With Hexo</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript"
+src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56a07c3ac699e3ca"
+async = "async" > </script>
+      
+    </div>
+  </div>
+
+ </div>
+
+        
+
+        
+          <div class="comments" id="comments">
+            
+              <div class="ds-thread" data-thread-key="2016/01/26/这么近-那么远/"
+                   data-title="这么近,那么远" data-url="http://ruiqiangjiao.github.io/2016/01/26/这么近-那么远/">
+              </div>
+            
+          </div>
+        
+      </div>
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/images/avatar.jpg" alt="JRQ" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">JRQ</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">宁缺毋滥</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="menu-item-icon icon-next-feed"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/RuiqiangJiao" target="_blank">GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.douban.com/people/140997498/" target="_blank">豆瓣</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/rqj-45" target="_blank">知乎</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">友情链接</p>
+            
+              <span class="links-of-author-item">
+              <a href="http://cos.name/" target="_blank">统计之都</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://rucdmc.net/" target="_blank">人民大学数据挖掘中心</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://club.excelhome.net/forum.php" target="_blank">ExcelHome</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://datascienceplus.com/terms-conditions/" target="_blank">datascience+</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://brucezhaor.github.io/" target="_blank">Bruce Zhao</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5199_u5728_u6700_u524D"><span class="nav-number">1.</span> <span class="nav-text">写在最前</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2015_2C_u4F60_u5728_u54EA_u91CC_3F"><span class="nav-number">2.</span> <span class="nav-text">2015,你在哪里?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C0F_u8BBA_u6587"><span class="nav-number">2.1.</span> <span class="nav-text">小论文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6570_u5B66_u5EFA_u6A21"><span class="nav-number">2.2.</span> <span class="nav-text">数学建模</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u56DE_u5BB6_u63A2_u671B"><span class="nav-number">2.3.</span> <span class="nav-text">回家探望</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u518D_u8BC6_u591A_u60C5_u73AF-R"><span class="nav-number">2.4.</span> <span class="nav-text">再识多情环-R</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521D_u8BC6java"><span class="nav-number">2.5.</span> <span class="nav-text">初识java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9009_u9898"><span class="nav-number">2.6.</span> <span class="nav-text">选题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u642D_u5EFA_u535A_u5BA2"><span class="nav-number">2.7.</span> <span class="nav-text">搭建博客</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7ED3_u675F_u8BED"><span class="nav-number">3.</span> <span class="nav-text">结束语</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner"> <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JRQ</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+ </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"rqj"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.1"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.1"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.5.1" id="motion.global"></script>
+
+
+
+
+  <script type="text/javascript" src="/js/nav-toggle.js?v=0.4.5.1"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.1" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 0.4 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    var $tocContent = $('.post-toc-content');
+    if (isDesktop() && CONFIG.sidebar === 'post') {
+      if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+        displaySidebar();
+      }
+    }
+  });
+</script>
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+      if (isMobile()) {
+        FastClick.attach(document.body);
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/lazyload.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#posts").find('img').lazyload({
+        placeholder: "/images/loading.gif",
+        effect: "fadeIn"
+      });
+    });
+  </script>
+
+</body>
+</html>
