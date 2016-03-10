@@ -82,7 +82,7 @@
 <p>更多RMySQL知识详见<a href="http://blog.fens.me/r-mysql-rmysql/" target="_blank" rel="external">http://blog.fens.me/r-mysql-rmysql/</a>.</p>
 <h4 id="u4E24_u79CD_u65B9_u5F0F_u7684_u5DEE_u5F02"><a href="#u4E24_u79CD_u65B9_u5F0F_u7684_u5DEE_u5F02" class="headerlink" title="两种方式的差异"></a>两种方式的差异</h4><ol>
 <li>RODBC访问模式稳定、安全,但操作比较机械呆板,程序繁琐;</li>
-<li>RMySQL访问模式操作灵活,安全系数不高(数据库的密码就这样爆在各位看官面前了),不稳定。</li>
+<li>RMySQL访问模式灵活,安全系数不高(数据库的密码就这样爆在各位看官面前了),操作不稳定。</li>
 </ol>
 <h2 id="u7ED3_u675F_u8BED"><a href="#u7ED3_u675F_u8BED" class="headerlink" title="结束语"></a>结束语</h2><p>R与MySQL的结合体在大数据时代的能量真是超乎你的想象。实用案例,下回再见!</p>
 ]]></content>
@@ -154,6 +154,14 @@
 <li><p>UNION合并查询结果时删除重复行;</p>
 </li>
 <li><p>UNION ALL合并查询结果,保留所有的结果.</p>
+</li>
+</ul>
+</li>
+<li><p>正则表达式中的”+”和”*”</p>
+<ul>
+<li><p>“+” 至少匹配一个元素;</p>
+</li>
+<li><p>“*” 可以匹配0个元素.</p>
 </li>
 </ul>
 </li>

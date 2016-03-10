@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://ruiqiangjiao.github.io/"/>
-  <updated>2016-03-08T13:25:37.048Z</updated>
+  <updated>2016-03-10T14:57:33.227Z</updated>
   <id>http://ruiqiangjiao.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://ruiqiangjiao.github.io/2016/03/05/R%E8%AE%BF%E9%97%AEMySQL/"/>
     <id>http://ruiqiangjiao.github.io/2016/03/05/R访问MySQL/</id>
     <published>2016-03-05T14:51:53.000Z</published>
-    <updated>2016-03-08T13:25:37.048Z</updated>
+    <updated>2016-03-10T14:57:33.227Z</updated>
     <content type="html"><![CDATA[<h2 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h2><p>关系型数据库对于数据的查询效率,这是大家公认的,尤其对于当前的 Data 超<strong>Big</strong>时代。而对于数据的处理显得极为吃力,恰逢其时,统计软件应运(数据分析)而生,将二者完美结合起来使用,何乐而不为?但这样的一个共同接口,真是众里寻他千百度。纵观统计软件,R(其他的统计软件,笔者未涉水,不敢狮子大开口)开发者提供了各色接口,来实现这种完美结合。论起数据库,MySQL在笔者的身体还有那么一点点的存在感,现将其抛出来,一探R与MySQL二人结合的完美世界。</p>
 <h2 id="R_u8BBF_u95EEMySQL"><a href="#R_u8BBF_u95EEMySQL" class="headerlink" title="R访问MySQL"></a>R访问MySQL</h2><p>系统环境:</p>
 <ul>
@@ -96,7 +96,7 @@
 <p>更多RMySQL知识详见<a href="http://blog.fens.me/r-mysql-rmysql/" target="_blank" rel="external">http://blog.fens.me/r-mysql-rmysql/</a>.</p>
 <h4 id="u4E24_u79CD_u65B9_u5F0F_u7684_u5DEE_u5F02"><a href="#u4E24_u79CD_u65B9_u5F0F_u7684_u5DEE_u5F02" class="headerlink" title="两种方式的差异"></a>两种方式的差异</h4><ol>
 <li>RODBC访问模式稳定、安全,但操作比较机械呆板,程序繁琐;</li>
-<li>RMySQL访问模式操作灵活,安全系数不高(数据库的密码就这样爆在各位看官面前了),不稳定。</li>
+<li>RMySQL访问模式灵活,安全系数不高(数据库的密码就这样爆在各位看官面前了),操作不稳定。</li>
 </ol>
 <h2 id="u7ED3_u675F_u8BED"><a href="#u7ED3_u675F_u8BED" class="headerlink" title="结束语"></a>结束语</h2><p>R与MySQL的结合体在大数据时代的能量真是超乎你的想象。实用案例,下回再见!</p>
 ]]></content>
@@ -119,7 +119,7 @@
     <link href="http://ruiqiangjiao.github.io/2016/03/04/MySQL%E4%B8%AD%E9%82%A3%E4%BA%9B%E9%A2%A0%E4%B8%89%E5%80%92%E5%9B%9B%E7%9A%84%E4%BA%8B/"/>
     <id>http://ruiqiangjiao.github.io/2016/03/04/MySQL中那些颠三倒四的事/</id>
     <published>2016-03-04T13:02:12.000Z</published>
-    <updated>2016-03-08T13:09:43.742Z</updated>
+    <updated>2016-03-10T15:02:04.213Z</updated>
     <content type="html"><![CDATA[<h2 id="u5199_u5728_u6700_u524D"><a href="#u5199_u5728_u6700_u524D" class="headerlink" title="写在最前"></a>写在最前</h2><p>当初学习SQL语言,像八戒吞人生果,不知SQL语言何味?一些关键字段在应用的过程中常常张冠李戴 ,经过一段的细嚼慢咽,品味出了一些劲道.先将其整理一番,以免日后再三(事(四)不过三,学习、练习已犯其二)犯事。</p>
 <h2 id="u90A3_u4E9B_u98A0_u4E09_u5012_u56DB_u7684_u4E8B"><a href="#u90A3_u4E9B_u98A0_u4E09_u5012_u56DB_u7684_u4E8B" class="headerlink" title="那些颠三倒四的事"></a>那些颠三倒四的事</h2><ul>
 <li><p>CHANGE 和 MODIFY</p>
@@ -183,6 +183,14 @@
 <li><p>UNION合并查询结果时删除重复行;</p>
 </li>
 <li><p>UNION ALL合并查询结果,保留所有的结果.</p>
+</li>
+</ul>
+</li>
+<li><p>正则表达式中的”+”和”*”</p>
+<ul>
+<li><p>“+” 至少匹配一个元素;</p>
+</li>
+<li><p>“*” 可以匹配0个元素.</p>
 </li>
 </ul>
 </li>
