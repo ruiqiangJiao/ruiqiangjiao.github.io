@@ -117,6 +117,11 @@
   };
 </script>
 
+
+
+
+  <link rel="canonical" href="http://ruiqiangjiao.github.io/2016/03/05/R访问MySQL/"/>
+
   <title> R访问MySQL | 增广遗贤 </title>
 </head>
 
@@ -125,16 +130,6 @@
   
 
 
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?d5f27801953ba5c3e9dc5aad3e0fa50e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -152,7 +147,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta custom-logo">
+      <div class="header-inner"><div class="site-meta ">
   
 
   <div class="custom-logo-site-title">
@@ -805,6 +800,7 @@
 
 
 
+
   
   
   <script type="text/javascript">
@@ -990,6 +986,14 @@
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
           }
         })
         .fail(function (object, error) {
